@@ -1,0 +1,18 @@
+{
+  "name": "nosso-tempo",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Nosso Tempo V2 — contador premium com Live Wallpaper nativo para Android.",
+  "scripts": {
+    "android:init": "npx cap add android && npx cap sync android && node scripts/patch-android.mjs",
+    "android:sync": "npx cap sync android && node scripts/patch-android.mjs",
+    "android:open": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/core": "^7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3"
+  }
+}
